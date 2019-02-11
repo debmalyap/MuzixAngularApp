@@ -1,0 +1,76 @@
+.mat-toolbar.mat-primary{
+    height:15vh;
+    padding-top: 15px;
+    display: flex;
+    background-color:#9c1148;
+    /* box-shadow: 3px 3px 25px plum; */
+    
+    
+
+}
+
+
+/* @media(min-width :320px) and (max-width:582px){
+
+    .container{
+        height:20vh;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    
+    }
+    .image-class{
+        padding-top: 20px;
+        align-items: center; 
+       margin-right: auto;
+   }
+   .mat-button{
+     font-size: 1em; 
+    
+    font-family: 'Acme', sans-serif;
+}
+
+} */
+  /* .form{
+    padding: 0px;
+    margin: 0px;
+}   */
+
+.Font-class{
+    font-family: 'Permanent Marker', cursive;
+    /* justify-content: space-between; */
+    flex: 0 0 auto;
+    color: #fff;
+}
+
+.image-class{
+     padding-top: 10px;
+    /* align-items: center; */
+    margin-right: auto;
+}
+.Font-class-size{
+    font-size: 1em;
+    font-family: cursive;
+}
+.mat-button{
+    font-size: 1.2em;
+    font-family: 'Acme', sans-serif;
+    
+}
+.label ,input{
+    font-family: 'Permanent Marker', cursive;
+}
+/* .menu-button{
+    font-size: 1em;
+    font-family: 'Acme', sans-serif; 
+} */
+.mat-menu-item-india{
+    font-size: 1em;
+    font-family: 'Acme', sans-serif; 
+}
+.mat-menu-item-spain{
+    font-size: 1em;
+    font-family: 'Acme', sans-serif; 
+}
+

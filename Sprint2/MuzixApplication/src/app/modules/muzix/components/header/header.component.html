@@ -1,0 +1,48 @@
+
+<mat-toolbar color="primary">
+
+    <mat-toolbar-row class="Font-class">
+
+      <!-- <div class="image"></div> -->
+        
+       <img class="image-class"src="assets/Images/newimage2.png" alt="NO image"> 
+      <!-- <span >Muzix Application</span> -->
+      <!-- <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm fxflex="100%">
+          <i class="material-icons">menu</i>
+        </button>
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-sm> -->
+      <button class ="mat-button" mat-button [matMenuTriggerFor]="menu">Tracks
+      </button>
+      <mat-menu #menu="matMenu">
+        <button class = "mat-menu-item-india"[routerLink]="['/India']" mat-menu-item>India</button>
+        <button class = "mat-menu-item-spain" [routerLink]="['/Spain']"mat-menu-item >Spain</button>
+      </mat-menu>
+      <span><button class="mat-button-wishlist" mat-button [routerLink]="['/WishList']">WishList</button></span>
+    
+    
+       <span><app-search></app-search></span>
+    
+    <!-- </div> -->
+</mat-toolbar-row>
+
+  </mat-toolbar>
+
+    <!-- <mat-sidenav-container fxFlexFill>
+        <mat-sidenav #sidenav>
+          <mat-nav-list>
+            <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+            <a href="#" mat-list-item>Menu Item 1</a>
+            <a href="#" mat-list-item>Menu Item 2</a>
+            <a href="#" mat-list-item>Menu Item 3</a>
+            <a href="#" mat-list-item>Menu Item 4</a>
+            <a href="#" mat-list-item>Menu Item 5</a>
+            <a href="#"mat-list-item>Menu Item 6</a>
+          </mat-nav-list>
+        </mat-sidenav>
+       
+      </mat-sidenav-container> -->
+        
+    
+   
+    

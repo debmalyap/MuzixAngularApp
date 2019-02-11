@@ -1,0 +1,63 @@
+<mat-card class="card-container">
+  <mat-card-header class="header">
+    <mat-card-title>{{ track.name }}</mat-card-title>
+    <mat-card-subtitle>{{ track.artist.name }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img
+    mat-card-image
+    class="image"
+    [src]="track.artist.image.text"
+    alt="Photo of a Shiba Inu"
+  />
+
+  <mat-card-actions class="button">
+    <!-- <div class="button-raised"> -->
+       <!-- <div class="mat-button">  -->
+        <button
+          class="deletebutton"
+          mat-mini-fab
+          *ngIf="watchListApi"
+          (click)="deleteTrack(track)"
+          matTooltip="Delete from WishList"
+        >
+          <i class="material-icons"> delete </i>
+        </button>
+
+        <button
+          class="addbutton"
+          mat-mini-fab
+          *ngIf="!watchListApi"
+          (click)="onClickMe(track)"
+          matTooltip="Add to WishList"
+        >
+          <mat-icon mat aria-label="Example icon-button with a heart icon"
+            >favorite</mat-icon
+          >
+        </button>
+       <!-- </div>  -->
+      <button mat-mini-fab class="mat-fab" matTooltip="Play">
+        <mat-icon>
+          <a [href]="track.url">
+            <i class="material-icons"> play_circle_filled_white</i>
+          </a>
+        </mat-icon>
+      </button>
+
+      <button
+        class="update"
+        mat-mini-fab
+        *ngIf="watchListApi"
+        (click)="addComments('update')"
+        matTooltip="update comments"
+      >
+        <i class="fas fa-pen"></i>
+      </button>
+
+      <!-- 
+              <button mat-fab color="accent">WishList</button> -->
+
+      <!-- <a mat-fab [routerLink]='track.url'>Link</a> -->
+    <!-- </div> -->
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,44 @@
+/* .root-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+/*.header{
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+   /* position: sticky;/* Sets the sticky toolbar to be on top */
+   /* top: 0;
+}*/
+
+.container{
+ 
+   display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+     margin-bottom: 10vh;
+   
+} 
+
+/*.content{
+    flex-grow: 1; /*   Imp for footer to stick down*/
+/*}*/
+/* .header-container{
+    height:15vh;
+    padding-top: 15px;
+    display: flex;
+} */
+
+/*.Font-class{
+    flex:0 0 auto;
+    font-family: 'Acme', sans-serif;
+    font-size: 1em;
+
+}
+.image-class{
+    margin-right: auto;
+}
+.mat-button{
+ 
+    font-family: 'Acme', sans-serif;
+    font-size: 1em;
+}*/

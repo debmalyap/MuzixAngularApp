@@ -1,0 +1,12 @@
+
+<div mat-dialog-content>
+
+ <mat-form-field>
+   <textarea class="matInput" matInput [(ngModel)]="comments" placeholder="Enter your comments"  >
+   </textarea>
+</mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button colour=warn (click)="onNoClick()">Cancel</button>
+  <button class="updateCommentdemo" mat-button colour=warn (click)="updateComments()">Update</button>
+  </div>

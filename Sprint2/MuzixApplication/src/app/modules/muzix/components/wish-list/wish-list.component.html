@@ -1,0 +1,26 @@
+<!-- <mat-toolbar class ="header-container"color="accent">
+  
+    <mat-toolbar-row class="Font-class">
+      <img class="image-class"src="assets/Images/music9.jpeg" alt="NO image">
+    <span>My WishList</span>
+    <span><button class="mat-button" mat-button [routerLink]="['']">Back To Home</button></span>
+  </mat-toolbar-row>
+
+</mat-toolbar> -->
+
+<!-- <div class="root-container"> -->
+ <!-- <app-header [watchListApi]='watchListApi' class="header"></app-header>  -->
+
+ <!-- <div class="content"> -->
+<div class='container' >
+    <app-card *ngFor='let track of tracks'
+    [track]='track' [watchListApi]='watchListApi' (deleteFromWishlist)="deleteFromWishlist($event)"
+    (updateComments)='updateComments($event)'></app-card>
+
+  </div>
+  <!-- </div> -->
+  <!-- <app-footer class="footer"></app-footer> -->
+  <!-- </div> -->
+ 
+
+

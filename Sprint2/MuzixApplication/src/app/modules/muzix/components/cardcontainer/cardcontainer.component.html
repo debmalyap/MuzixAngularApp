@@ -1,0 +1,35 @@
+<!-- <div *ngFor='let track of tracks'>
+  {{track.name}} || {{track.artist.name}}
+  <img [src]='track.artist.image[0].text'>
+  </div> -->
+
+<!-- <div class="root-container">
+  <app-header class="header"></app-header> -->
+
+  <!-- <div class="content"> -->
+    <div class="container">
+      <app-card
+        *ngFor="let track of tracks"
+        [track]="track"
+        (addToWishList)="addToWishList($event)"
+        [statusCode]="statusCode"
+      ></app-card>
+    </div>
+  <!-- </div> -->
+  <!-- <app-footer class="footer"></app-footer>
+</div> -->
+
+<!-- <app-flexdemo 
+  fxFlex="0 1 calc(33.3% - 32px)"
+  fxFlex.lt-md="0 1 calc(50% -32px)"
+  fxFlex.li-sm="100%"
+  fxLayout.lt-sm="column" 
+  ></app-flexdemo> -->
+<!-- <div fxLayout="row wrap"
+       fxLayoutAlign="space-evenly center">
+      <app-card 
+     
+       *ngFor='let track of tracks'
+      [track]='track' (addToWishList)="addToWishList($event)" [statusCode] = 'statusCode'></app-card>
+  
+    </div> -->

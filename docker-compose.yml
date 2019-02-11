@@ -1,0 +1,23 @@
+version: '3'
+services:
+  Spring:
+    image: rutustackroute/muzixserviceimage:v1
+    restart: always
+    network_mode: host
+    depends_on:
+      - mongo
+    ports:
+      - 8083:8083
+    expose:
+      - 8083
+  angular:
+    image: rutustackroute/muzixserviceangularimage:v2
+    network_mode: host
+    ports:
+      - 8080:8080
+  mongo:
+   image: mongo:3.4-jessie
+   ports:
+     - "27017:27017"
+   container_name: mongo
+   network_mode: host
